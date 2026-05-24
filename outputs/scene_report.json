@@ -1,0 +1,43 @@
+{
+  "prompt": "A spaceship in outer space",
+  "agents": [
+    {
+      "agent": "Dreamer XL",
+      "method": "Trajectory Score Matching + SDXL",
+      "prompt": "A spaceship in outer space",
+      "object": "spaceship",
+      "environment": "outer space",
+      "tsm_score": 0.043,
+      "sdxl_guidance": 10.8,
+      "confidence": 0.86,
+      "output": "outputs/dreamer_xl_scene.png"
+    },
+    {
+      "agent": "X-Dreamer",
+      "method": "CG-LoRA + AMA Loss",
+      "prompt": "A spaceship in outer space",
+      "object": "spaceship",
+      "lora_rank": 4,
+      "ama_loss": 0.0291,
+      "domain_gap": 0.0193,
+      "confidence": 0.81,
+      "output": "outputs/xdreamer_scene.png"
+    },
+    {
+      "agent": "ATD",
+      "method": "Language Imagination + Robot Navigation",
+      "prompt": "A spaceship in outer space",
+      "target": "spaceship",
+      "instructions": [
+        "explore area",
+        "approach goal",
+        "halt at target"
+      ],
+      "waypoints": 7,
+      "avg_grounding": 0.666,
+      "path_efficiency": 0.378,
+      "confidence": 0.79,
+      "output": "outputs/atd_navmap.png"
+    }
+  ]
+}
