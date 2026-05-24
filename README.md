@@ -255,9 +255,11 @@ Aggregates results from all 3 agents and generates a 6-panel comparison figure:
 
 ---
 
+
+
 ## 👥 Authors
 
-> [Your Names Here]  
+> Mariem Hachicha, Chahd Gharbi, Eya Dammak  
 > Course: AI Beyond Transformers  
-> Institution: [Your University]  
+> Institution: Enis  
 > Date: 2026
